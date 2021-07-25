@@ -9,7 +9,13 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  // Solution code here...
+  let array =[];
+  arr.array.forEach(element => {
+    array.push(element+1);
+  });
+
+  return array ;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,7 +27,13 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  // Solution code here...
+   let array =[];
+  arr.array.forEach(element => {
+    array.push(element + '!');
+  });
+
+  return array ;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,7 +45,13 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let array =[];
+  arr.array.forEach(element => {
+    array.push(element.toUpperCase());
+  });
+
+  return array ;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,7 +65,12 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  let array =[];
+  arr.array.forEach(element => {
+    array.push(element.toUpperCase() + '!');
+  });
+
+  return array ;
 };
 
 const speaker = (words, callback) => {
