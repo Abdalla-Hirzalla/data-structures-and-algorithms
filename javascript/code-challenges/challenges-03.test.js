@@ -23,10 +23,12 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
-  let numFilter = [];
-  numFilter = arr.filter((value) => {
-    return (value !== ' ');
+  let Array=arr.filter((item)=>{
+    if (typeof item ==="number"){
+      return true
+    }
   });
+  return Array;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,10 +40,10 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 ------------------------------------------------------------------------------------------------ */
 
 const containsAnd = (arr) => {
-  let andFilter = [];
-  andFilter = arr.filter((value) => {
-    return (value === 'and');
-  });
+  let array= arr.filter((item)=>{
+    return item.includes('and');
+   })
+   return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,7 +58,7 @@ const oddValues = (arr) => {
   let oddFilter = [];
   oddFilter = arr.filter((value) => {
     return (value % 2 == 0);
-  });
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,7 +70,10 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
- 
+  let array= arr.filter((item)=>{
+    return !forbiddenValues.includes(item);
+   })
+   return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
